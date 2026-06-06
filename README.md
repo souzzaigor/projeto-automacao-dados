@@ -6,7 +6,8 @@ Este projeto foi desenvolvido para otimizar o processo de triagem em clínicas m
 
 ## 📷 Demonstração do Sistema Funcionando
 
-*(Arraste a sua imagem do terminal aqui quando for editar no GitHub)*
+*(<img width="483" height="273" alt="Captura de tela 2026-06-05 135343" src="https://github.com/user-attachments/assets/d73f6b70-853a-47d9-8981-67c47e10465a" />
+)*
 
 ---
 
