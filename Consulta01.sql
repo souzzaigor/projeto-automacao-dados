@@ -30,12 +30,11 @@ SELECT
         ELSE 'Neutro/Outros'
     END AS sentimento_comentario,
     
--- 2. Conta quantos pacientes caíram em cada grupo
-    COUNT(id_atendimento) AS total_comentarios
+COUNT(id_atendimento) AS total_comentarios
 
 FROM historico_pacientes
 WHERE comentario IS NOT NULL
 
--- 3. Agrupa e ordena para trazer o maior volume primeiro
+
 GROUP BY sentimento_comentario
 ORDER BY total_comentarios DESC;
