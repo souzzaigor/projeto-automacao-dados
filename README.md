@@ -18,10 +18,13 @@ Este projeto foi desenvolvido para otimizar o processo de triagem em clínicas m
 3. **Análise de Sentimentos (SQL):** Criação de uma query analítica avançada (`Consulta01.sql`) utilizando `CASE WHEN` para mapear palavras-chave reais da base e `GROUP BY` para contar o volume de comentários Positivos, Negativos e Neutros.
 
 ## 🗂️ Estrutura do Repositório
-* `main.py`: Script de automação que integra o Pandas com a API do Gemini.
-* `feedbacks_clinica.csv`: Base de dados real de testes contendo os históricos de atendimento.
-* `Consulta01.sql`: Script de extração e agrupamento de sentimentos no banco de dados.
 
+* **`setup_banco.py`**: Script de inicialização responsável por criar o banco de dados relacional (SQLite) do zero e popular as tabelas iniciais com dados simulados (*mock*).
+* **`gerar_mais_clientes.py`**: Automação construída para gerar e inserir novos registros massivos no banco, permitindo simular o crescimento da base de pacientes da clínica para testes de carga.
+* **`main.py`**: Script de execução principal que extrai os dados do SQLite, integra com a API do Google Gemini e realiza o processamento de linguagem natural para classificar o risco de *No-Show*.
+* **`Consulta01.sql`**: Query analítica estruturada com regras de negócio (`CASE WHEN` e `GROUP BY`) para extrair a volumetria e os indicadores de sentimento diretamente do banco.
+* **`.gitignore`**: Arquivo de segurança configurado para barrar o envio de chaves de API, arquivos temporários e ambientes virtuais para o repositório público.
+* 
 ## 🛠️ Como Executar
 1. Clone o repositório:
    ```bash
