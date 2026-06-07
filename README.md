@@ -24,7 +24,7 @@ Este projeto foi desenvolvido para otimizar o processo de triagem em clínicas m
 * **`main.py`**: Script de execução principal que extrai os dados do SQLite, integra com a API do Google Gemini e realiza o processamento de linguagem natural para classificar o risco de *No-Show*.
 * **`Consulta01.sql`**: Query analítica estruturada com regras de negócio (`CASE WHEN` e `GROUP BY`) para extrair a volumetria e os indicadores de sentimento diretamente do banco.
 * **`.gitignore`**: Arquivo de segurança configurado para barrar o envio de chaves de API, arquivos temporários e ambientes virtuais para o repositório público.
-* 
+  
 ## 🛠️ Como Executar
 1. Clone o repositório:
    ```bash
